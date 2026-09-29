@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.conservation {
+    padding: 80px 0;
+    text-align: center; /* Center align text within .conservation */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.conservation h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #167c23;
+    text-align: center; 
+}
+
+.conservation h3 {
+    font-size: 22px;
+    color: #888;
+    margin-bottom: 8px;
+    text-align: center; 
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background-color:#167c23;
+    margin: 20px auto; /* Center align the line */
+}
+
+.conservation p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Center align p elements within .conservation */
+}
+
+.help {
+    padding: 40px 0;
+    text-align: center; /* Center align text within .programs */
+}
+
+.mission-vision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.mission-vision .box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto; /* Center align boxes */
+}
+
+.mission-vision .box img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.mission-vision .box h3 {
+    font-size: 28px;
+    color: #167c23;
+    margin-bottom: 10px;
+}
+
+.mission-vision .box p {
+    font-size: 16px;
+    color: #333;
+}
+.educatinal h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #167c23;
+    text-align: center;
+}
+.content-col .ctn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(85, 171, 85);
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+.content-col .ctn:hover {
+    background-color: #49497e;
+}
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}

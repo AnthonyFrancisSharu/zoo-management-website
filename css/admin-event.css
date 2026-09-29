@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.btn{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    background:rgb(113, 151, 16);
+    color: white;
+    text-align: center;
+}
+
+.btn:hover{
+    background: black;
+}
+
+.message{
+    display: block;
+    background: red;
+    padding: 1.5rem 1rem;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+.container{
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.admin-product-form-container .centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-height: 100vh;
+}
+.admin-product-form-container form{
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 5rem;
+    background: rgb(150, 192, 162);
+}
+.admin-product-form-container form h3{
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.admin-product-form-container form .box{
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.7rem;
+    margin: 1rem 0;
+    background: white;
+    text-transform: none;
+}
+.btn-edit {
+    background:rgb(113, 151, 16);
+}
+
+.btn-delete {
+    background:rgb(209, 32, 32);
+}
+.event-dispaly{
+    margin-top: 5rem;
+   
+}
+.event-dispaly .event-display-table{
+    width: 100%;
+    text-align: center;
+}
+.event-dispaly .event-display-table thead{
+    font-size:2rem;
+    background-color: rgb(172, 162, 162);
+}
+.event-dispaly .event-display-table th{
+    padding: 1rem;
+    font-size: 2rem;
+}
+.event-dispaly .event-display-table td{
+    padding: 1rem;
+    font-size: 2rem;
+    border-bottom: #f0f0f0;
+}
+
+
+.event-dispaly .event-display-table .btn .btn-edit,.btn-edit:last-child:hover{
+    background: black;
+
+}
+.message .close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+@media (max-width:768px)
+{
+    html{
+        font-size: 50%;
+    }
+    .event-dispaly .event-display-table{
+        width: 60rem;
+    }
+    .event-dispaly{
+        overflow-y: scroll;
+    }
+}
+
+
+
+@media (max-width:450px)
+{
+    html{
+        font-size:50%;
+    }
+}

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #f9f4f4;
+    line-height: 1.6;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    color: #167c23;
+    margin-top: 100px;
+}
+
+.title h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.title .line {
+    width: 100px;
+    height: 3px;
+    background-color: #167c23;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.col {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    text-align: center;
+}
+
+.col img {
+    max-width: 70%;
+    height: auto;
+    margin: 50px auto;
+    transition: transform .3s ease;
+}
+
+.col img:hover {
+    transform: scale(1.2);
+}
+
+h4 {
+    font-size: 22px;
+    margin: 5px auto;
+    color: #167c23;
+}
+
+p {
+    font-size: 18px;
+    color: #02021cc9;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.ctn {
+    display: inline-block;
+    background-color: #49497e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.ctn:hover {
+    background-color: #3a3a66;
+}
+
+.programs {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.programs .title h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.program-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.program-item {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #49497e;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col {
+        max-width: 90%;
+    }
+
+    .title h1 {
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .program-list {
+        font-size: 16px;
+    }
+
+    .program-item {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}

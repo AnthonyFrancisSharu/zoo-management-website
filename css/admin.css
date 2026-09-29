@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 40px;
+    background: url(../images/admin.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80% center right;
+
+}
+.container .content{
+    text-align: center;
+}
+.container .content h2{
+    font-size: 30px;
+    color: #333;
+}
+.container .content h2 span{
+    color:black;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+.container .content h1{
+    font-size: 50px;
+    color: #333;
+}
+.container .content h1 span{
+    color: #49497e;
+}
+
+.container .content p{
+    font-size: 20px;
+    margin-bottom: 20px;   
+}
+.container .content .btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    background: #333;
+    color: #fff;
+    margin:0 5px;
+}
+.container .content .btn:hover{
+    background:crimson;
+}

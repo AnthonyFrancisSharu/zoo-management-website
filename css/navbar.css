@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    background: #013a09;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    margin-left: 20px; /* Adjust the margin to move the logo right */
+}
+
+.logo img {
+    width: 50px; /* Adjust the width to make the logo smaller */
+    height: 50px; /* Maintain aspect ratio */
+}
+
+ul {
+    list-style: none;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link li {
+    margin: 0 30px;
+    position: relative; /* Needed for dropdown positioning */
+}
+
+.nav-link a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.ctn {
+    padding: 5px 10px;
+    background-color: rgb(113, 151, 16);;
+    color: #fff;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+.ctn:hover {
+    background-color:black;
+    color: whitesmoke;
+}
+
+/* Dropdown styles */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background:#013a09;
+    border-radius: 5px;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 4px 6px rgb(37, 4, 4);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: #e7e0e0;
+    padding: 10px 20px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background:black;
+}
+
+/* Mobile device */
+@media only screen and (max-width: 850px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        padding: 0;
+        background: rgb(113, 129, 160);
+        font-family: calibri;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .nav-link {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        width: 70%;
+        height: 100vh;
+        justify-content: center;
+        background: #e8e8ee;
+        transition: right 0.5s ease;
+        z-index: 1000;
+        padding-top: 60px; /* Ensure there's space for the menu button */
+    }
+
+    .nav-link.mobile-menu {
+        right: 0;
+    }
+
+    .nav-link li {
+        margin: 20px auto; /* Adjusted for better spacing */
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: block;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    body.no-scroll {
+        overflow:hidden;
+}
+}

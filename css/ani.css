@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+body,html{
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+.section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color:#167c23;
+    margin-top: 100px;
+}
+.title .line {
+    width: 100px;
+    height: 3px;
+    background-color:#167c23;
+    margin: 20px auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.col {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    text-align: center;
+}
+h4 {
+    font-size: 3vmin;
+    margin: 5px auto;
+    color:#167c23;
+}
+p {
+    color: #020224aa;
+    padding: 15px 10px;
+}
+.ctn {
+    display: inline-block;
+    background-color: #49497e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.ctn:hover {
+    background-color: #49497e;
+}
+img:hover{
+    transform: scale(1.2);
+
+}
+.event-time {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #888;
+}
+.zebra{
+    margin: 50px auto;
+    max-width: 70%;
+    transition: transform .3s ease;
+}
+.gigreff{
+    margin: 50px auto;
+    width: 70%;
+    transition: transform .3s ease;
+}
+.wilddeer{
+    margin: 50px auto;
+    max-width: 70%;
+    transition: transform .3s ease;
+}
+.frog{
+    margin: 50px auto;
+    max-width: 70%;
+    transition: transform .3s ease;
+}
+.cheetah{
+    margin: 50px auto;
+    max-width: 70%;
+    transition: transform .3s ease;    
+}
+.kolabear{
+    margin: 50px auto;
+    width: 70%;
+    transition: transform .3s ease;
+}
+.orangutans{
+    margin: 50px auto;
+    max-width: 70%;
+    transition: transform .3s ease;
+}
+.sealion{
+    margin: 50px auto;
+    max-width: 70%;
+    transition: transform .3s ease;
+}

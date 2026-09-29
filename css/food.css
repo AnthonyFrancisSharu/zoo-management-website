@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    width: 80%;
+    margin: 0 auto; /* Adjusted to remove unnecessary vertical space */
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color:#167c23;
+    margin-top: 100px; /* Adjusted to reduce top margin */
+}
+
+.title .line {
+    width: 100px;
+    height: 3px;
+    background-color: #167c23;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Reduced top margin for better spacing */
+}
+
+.col {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px; /* Reduced margin to decrease the space between columns */
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 30%; /* Adjusted width to fit more items per row */
+    text-align: center;
+}
+
+h4 {
+    font-size: 3vmin;
+    margin: 15px 0; /* Adjusted margin to reduce space around headings */
+    color: #167c23;
+}
+
+p {
+    color: #49497e;
+    padding: 10px; /* Adjusted padding for better text spacing */
+    font-size: 18px; /* Reduced font size for consistency */
+}
+
+img {
+    max-width: 100%; /* Ensures images fit within their containers */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.1); /* Reduced scale for more subtle hover effect */
+}
+
+.biriyani, .noodles, .nasigoreng, .cheesepasta, .paratta, .pizza, .submarine, .sandwitch, 
+.cheesecake, .blueberrycake, .cupcake, .pancake, .chocoroll, .berrypancake, .icecreamcake, .vanilaicecream, 
+.pineapple, .lemon, .cocacola, .creamsoda, .stawberrymilk, .blueberrymilk, .chocomilk, .falooda {
+    margin: 0 auto; /* Removed individual margins for uniform spacing */
+    max-width: 70%; /* Ensures images are not too large */
+    transition: transform .3s ease;
+    border: 1px solid #000;
+}

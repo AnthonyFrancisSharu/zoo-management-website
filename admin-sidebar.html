@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Link to the external CSS file for sidebar styling -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Button to trigger the opening of the sidebar -->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar"> <!-- Sidebar structure -->
+        <header>
+            <div class="close-btn"> <!-- Button to close the sidebar -->
+                <i class="fas fa-times"></i>
+            </div>
+            <!-- Admin logo and title -->
+            <img src="./images/adminlogo.jpg" alt="">
+            <h1>ZooParc</h1>
+        </header>
+
+        <!-- Navigation menu in the sidebar -->
+        <div class="menu">
+            <div class="item"> <a href="admin.php"><i class="fas fa-desktop"></i>Dashboard</a></div>
+            <div class="item"> <a href="admin-event.php"><i class="fas fa-th"></i>Event</a></div>
+            <div class="item"> <a href="admin-program.php"><i class="fas fa-th"></i>Program</a></div>
+            <div class="item"> <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a></div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //jquery for expand and collapse the sidebar
+            $('.menu-btn').click(function(){
+                $('.side-bar').addClass('active');
+                $('.menu-btn').css("visibility", "hidden");
+            });
+            //for close the sidebar
+            $('.close-btn').click(function(){
+                $('.side-bar').removeClass('active');
+                $('.menu-btn').css("visibility", "visible");
+            });
+        })
+    </script>
+</body>
+</html>
